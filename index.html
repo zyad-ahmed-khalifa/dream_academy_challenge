@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .pad {
+        padding: 15px 0;
+      }
+      .card {
+        box-shadow: 0px 0px 12px 4px #0003;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        overflow: hidden;
+        position: relative;
+      }
+      .card:hover {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+      }
+      .card .logo img {
+        width: 250px;
+        border: 3px solid #2196f3;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+      }
+      .card .info h6,
+      .card .info span {
+        text-align: center;
+      }
+      .card .info h6 {
+        font-size: 35px;
+        font-weight: 100;
+        margin: 0;
+        padding-bottom: 10px;
+      }
+      .card .info span {
+        display: block;
+        color: #666;
+        font-size: 18px;
+      }
+      .card .contact {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .card .contact a {
+        color: unset;
+        font-size: 30px;
+      }
+      .s {
+        background-color: #2196f3;
+        width: 10px;
+        height: 10px;
+        bottom: 0%;
+        right: 0%;
+        display: block;
+        transition: 0.9s;
+        -webkit-transition: 0.9s;
+        -moz-transition: 0.9s;
+        -ms-transition: 0.9s;
+        -o-transition: 0.9s;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        z-index: -1;
+        position: absolute;
+      }
+      .card:hover .s {
+        width: 100%;
+        height: 100%;
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <span class="s"></span>
+      <div class="logo pad">
+        <img
+          src="https://www.semicode.tech/build/assets/SemiCode-small-logo-4d25cec4.png"
+          alt=""
+        />
+      </div>
+      <div class="info pad">
+        <h6>Zyad Ahmed</h6>
+        <span>full-stack developer</span>
+      </div>
+      <div class="contact pad">
+        <a href="https://github.com/zyad-ahmed-khalifa"
+          ><i class="fa-brands fa-square-github"></i>
+</a>
+        <a href="https://codepen.io/zyad-ahmed"
+          ><i class="fa-brands fa-codepen"></i
+        ></a>
+        <a href="https://wa.me/qr/745G4NJLATD5O1 "
+          ><i class="fa-brands fa-square-whatsapp"></i
+        ></a>
+      </div>
+    </div>
+  </body>
+</html>
